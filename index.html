@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA para mi amor</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+    }
+    header {
+        background-color: #ff6f61;
+        color: white;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+    header p {
+        margin: 10px 0;
+        font-size: 1.2em;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .ia-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    .ia-card {
+        background-color: #e3f2fd;
+        padding: 20px;
+        border-radius: 8px;
+        display: flex; /* Usamos flexbox */
+        justify-content: space-between; /* Espacia los elementos horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .ia-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+    .ia-card h3 {
+        margin: 0;
+        color: #333;
+        font-size: 1.2em; /* Reducimos un poco el tamaño para mejor ajuste */
+    }
+    .ia-card a {
+        padding: 8px 16px; /* Ajustamos el padding para un botón más compacto */
+        background-color: #ff6f61;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        white-space: nowrap; /* Evita que el texto del botón se divida */
+    }
+    .ia-card a:hover {
+        background-color: #e65b50;
+    }
+    footer {
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+        color: #666;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IA para mi amor</h1>
+        <p>Una selección de las mejores inteligencias artificiales conversacionales para explorar juntos 💕</p>
+    </header>
+    <div class="container">
+        <div class="ia-list">
+            <div class="ia-card"><h3>ChatGPT</h3><a href="https://chat.openai.com/" target="_blank">Visitar</a></div>
+            <div class="ia-card"><h3>Grok</h3><a href="https://grok.com/" target="_blank">Visitar</a></div>
+            <div class="ia-card"><h3>Gemini</h3><a href="https://gemini.google.com/" target="_blank">Visitar</a></div>
+            <div class="ia-card"><h3>DeepSeek</h3><a href="https://www.deepseek.com/" target="_blank">Visitar</a></div>
+            <div class="ia-card"><h3>Copilot</h3><a href="https://copilot.microsoft.com/" target="_blank">Visitar</a></div>
+            <div class="ia-card"><h3>Claude</h3><a href="https://www.anthropic.com/claude" target="_blank">Visitar</a></div>
+            <div class="ia-card"><h3>Le Chat</h3><a href="https://chat.mixtral.ai/" target="_blank">Visitar</a></div>
+            <div class="ia-card"><h3>YouChat</h3><a href="https://you.com/" target="_blank">Visitar</a></div>
+            <div class="ia-card"><h3>Perplexity AI</h3><a href="https://www.perplexity.ai/" target="_blank">Visitar</a></div>
+            <div class="ia-card"><h3>Character.AI</h3><a href="https://character.ai/" target="_blank">Visitar</a></div>
+            <div class="ia-card"><h3>Chatsonic</h3><a href="https://writesonic.com/chatsonic" target="_blank">Visitar</a></div>
+            <div class="ia-card"><h3>ZenoChat</h3><a href="https://www.textcortex.com/zenochat" target="_blank">Visitar</a></div>
+        </div>
+    </div>
+    <footer>
+        <p>Hecho con ❤️ para ti, mi amor</p>
+    </footer>
+
+    <script>
+        // Opcional: Agregar un mensaje al hacer clic en un enlace
+        document.querySelectorAll('.ia-card a').forEach(link => {
+            link.addEventListener('click', () => {
+                alert('¡Explora esta IA y diviértete, mi amor!');
+            });
+        });
+    </script>
+</body>
+</html>
